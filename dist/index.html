@@ -21,7 +21,7 @@
         class="w-full px-6 h-14 flex items-center justify-between gap-4 border-b border-neutral-200 bg-white shrink-0">
 
         <!-- Logo -->
-        <a href="/dashboard" class="flex items-center gap-2 shrink-0">
+        <a href="#" class="flex items-center gap-2 shrink-0">
             <span class="text-2xl font-bold leading-none" style="color: hsl(171 95% 34%);">€</span>
             <span class="font-semibold text-base tracking-tight text-gray-900">Ishikawa Fin</span>
         </a>
@@ -38,7 +38,6 @@
                 class="w-full bg-transparent text-sm text-gray-700 placeholder-gray-400 outline-none" />
         </div>
 
-        <!-- Ícones direita -->
         <div class="flex items-center gap-1 shrink-0">
             <!-- Notificação -->
             <button
@@ -70,15 +69,18 @@
         <aside
             class="hidden md:flex flex-col justify-between bg-white border-r border-r-gray-200 self-stretch w-[272px] shrink-0">
 
-            <!-- Topo: Logo -->
             <div class="px-4">
+                <!-- Nav -->
                 <nav class="flex flex-col pt-2">
+
+                    <!-- Label: Gerencia -->
                     <span class="px-2 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-gray-400">
                         Gerencia
                     </span>
 
-                    <a href="/dashboard"
-                        class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-900 bg-gray-100">
+                    <!-- Dashboard (active) -->
+                    <a href="#"
+                        class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="shrink-0 text-gray-500">
@@ -91,7 +93,7 @@
                     </a>
 
                     <!-- Movimentações -->
-                    <a href="/movimentacoes"
+                    <a href="#"
                         class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -107,7 +109,7 @@
                     </a>
 
                     <!-- Categorias -->
-                    <a href="/categorias"
+                    <a href="#"
                         class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -119,8 +121,8 @@
                     </a>
 
                     <!-- Histórico -->
-                    <a href="/historico"
-                        class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+                    <a href="#"
+                        class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-900 bg-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="shrink-0">
@@ -136,7 +138,7 @@
                     </span>
 
                     <!-- Usuários -->
-                    <a href="/usuarios"
+                    <a href="#"
                         class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -150,7 +152,7 @@
                     </a>
 
                     <!-- Configurações -->
-                    <a href="/configuracoes"
+                    <a href="#"
                         class="flex items-center gap-2.5 rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -169,11 +171,11 @@
             <div class="border-t border-gray-100 px-4 py-3">
                 <div
                     class="flex items-center gap-3 rounded-md px-2 py-2 hover:bg-gray-50 cursor-pointer transition-colors">
-                    <img src="https://i.pravatar.cc/40?u=alexandre" alt="Alexandre Ishikawa"
-                        class="h-8 w-8 rounded-full object-cover shrink-0" />
+                    <img src="./images/perfil.jpg" alt="Alexandre Ishikawa"
+                        class="h-8 w-8 rounded-full object-cover shrink-0" loading="lazy" />
                     <div class="flex flex-col min-w-0">
                         <span class="text-sm font-medium text-gray-900 truncate">Alexandre Ishikawa</span>
-                        <span class="text-xs text-gray-400 truncate">alexandre@gmail.com</span>
+                        <span class="text-xs text-gray-400 truncate">rm573280@fiap.com.br</span>
                     </div>
                 </div>
             </div>
@@ -184,13 +186,13 @@
         <main class="flex flex-1 flex-col bg-neutral-200 px-8 py-8 overflow-auto gap-6">
 
             <!-- Cabeçalho da página -->
-            <div class="flex items-start justify-between gap-4">
+            <div class="flex items-start justify-between gap-4 flex-col md:flex-row">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight text-neutral-1000">Histórico de Movimentações</h1>
                     <p class="mt-1 text-sm text-gray-500">Consulte, filtre e gerencie suas movimentações</p>
                 </div>
                 <button
-                    class="shrink-0 inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                    class="shrink-0 w-full md:w-auto justify-center md:justify-start inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
                     style="background-color: hsl(171 95% 34%);">
                     + Nova Movimentação
                 </button>
@@ -251,7 +253,189 @@
 
             </div>
 
+            <!-- Tabela de movimentações -->
+            <div class="card overflow-hidden p-0">
+
+                <!-- Filtros -->
+                <div
+                    class="p-4 flex flex-col sm:flex-row gap-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 border-b border-gray-100">
+                    <select
+                        class="flex-1 px-4 py-3 text-sm text-gray-500 bg-white outline-none cursor-pointer hover:bg-gray-50 transition-colors">
+                        <option value="">Selecione uma categoria</option>
+                        <option>Salário</option>
+                        <option>Alimentação</option>
+                        <option>Transporte</option>
+                        <option>Lazer</option>
+                    </select>
+                    <select
+                        class="flex-1 px-4 py-3 text-sm text-gray-500 bg-white outline-none cursor-pointer hover:bg-gray-50 transition-colors">
+                        <option value="">Selecione o tipo</option>
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                    <div class="flex-1 flex items-center px-4 py-3 gap-2">
+                        <span class="text-sm text-gray-400">R$</span>
+                        <input type="number" placeholder="0,00"
+                            class="w-full text-sm text-gray-700 placeholder-gray-400 bg-white outline-none" />
+                    </div>
+                </div>
+
+                <!-- Tabela -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr
+                                class="border-b border-gray-100 text-left text-xs font-semibold text-gray-400 uppercase tracking-wide">
+                                <th class="px-4 py-3 font-medium">Data</th>
+                                <th class="px-4 py-3 font-medium">Descrição</th>
+                                <th class="px-4 py-3 font-medium">Categoria</th>
+                                <th class="px-4 py-3 font-medium">Tipo</th>
+                                <th class="px-4 py-3 font-medium">Valor</th>
+                                <th class="px-4 py-3 font-medium">Forma de Pagamento</th>
+                                <th class="px-4 py-3 font-medium">Origem</th>
+                                <th class="px-4 py-3 font-medium">Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-50">
+
+                            <!-- Linha 1 -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-4 py-3 text-gray-500 whitespace-nowrap">25/04/2026</td>
+                                <td class="px-4 py-3 font-medium text-neutral-1000">Salário Mensal</td>
+                                <td class="px-4 py-3 text-gray-600">Salário</td>
+                                <td class="px-4 py-3">
+                                    <span
+                                        class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-green-50 text-green-700">Entrada</span>
+                                </td>
+                                <td class="px-4 py-3 font-semibold text-green-600 whitespace-nowrap">R$ 4.500,00</td>
+                                <td class="px-4 py-3 text-gray-600">Transferência</td>
+                                <td class="px-4 py-3 text-gray-500">automático</td>
+                                <td class="px-4 py-3 relative">
+                                    <div class="relative inline-block" x-data>
+                                        <button onclick="toggleMenu(this)"
+                                            class="flex h-7 w-7 items-center justify-center rounded-md text-gray-400 hover:bg-gray-100 transition-colors font-bold text-base">⋮</button>
+                                        <div
+                                            class="action-menu hidden absolute right-0 z-10 mt-1 w-32 rounded-lg border border-gray-100 bg-white shadow-lg py-1">
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                                </svg>
+                                                Editar
+                                            </button>
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                                                </svg>
+                                                Duplicar
+                                            </button>
+                                            <div class="h-px bg-gray-100 my-1"></div>
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-red-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline points="3 6 5 6 21 6" />
+                                                    <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                                                    <path d="M10 11v6" />
+                                                    <path d="M14 11v6" />
+                                                    <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                                </svg>
+                                                Excluir
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Linha 2 -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-4 py-3 text-gray-500 whitespace-nowrap">26/04/2026</td>
+                                <td class="px-4 py-3 font-medium text-neutral-1000">Supermercado</td>
+                                <td class="px-4 py-3 text-gray-600">Alimentação</td>
+                                <td class="px-4 py-3">
+                                    <span
+                                        class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-50 text-red-600">Saída</span>
+                                </td>
+                                <td class="px-4 py-3 font-semibold text-red-500 whitespace-nowrap">R$ 320,75</td>
+                                <td class="px-4 py-3 text-gray-600">Cartão de Crédito</td>
+                                <td class="px-4 py-3 text-gray-500">manual</td>
+                                <td class="px-4 py-3 relative">
+                                    <div class="relative inline-block">
+                                        <button onclick="toggleMenu(this)"
+                                            class="flex h-7 w-7 items-center justify-center rounded-md text-gray-400 hover:bg-gray-100 transition-colors font-bold text-base">⋮</button>
+                                        <div
+                                            class="action-menu hidden absolute right-0 z-10 mt-1 w-32 rounded-lg border border-gray-100 bg-white shadow-lg py-1">
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                                </svg>
+                                                Editar
+                                            </button>
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                                                </svg>
+                                                Duplicar
+                                            </button>
+                                            <div class="h-px bg-gray-100 my-1"></div>
+                                            <button
+                                                class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-red-50 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline points="3 6 5 6 21 6" />
+                                                    <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                                                    <path d="M10 11v6" />
+                                                    <path d="M14 11v6" />
+                                                    <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                                </svg>
+                                                Excluir
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
         </main>
+
+        <script>
+            function toggleMenu(btn) {
+                const menu = btn.nextElementSibling;
+                document.querySelectorAll('.action-menu').forEach(menu => {
+                    if (menu !== menu) menu.classList.add('hidden');
+                });
+                menu.classList.toggle('hidden');
+            }
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.relative')) {
+                    document.querySelectorAll('.action-menu').forEach(menu => menu.classList.add('hidden'));
+                }
+            });
+        </script>
 
     </div>
 
@@ -259,13 +443,10 @@
         Projeto acadêmico · 2026
     </footer>
 
-    <!-- Bottom nav — apenas mobile -->
     <nav class="md:hidden fixed bottom-0 left-0 right-0 flex items-stretch bg-white border-t border-gray-200 z-50">
 
-        <!-- Dashboard (ativo) -->
-        <a href="/dashboard"
-            class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium relative"
-            style="color: hsl(171 95% 34%);">
+        <a href="#"
+            class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium text-gray-500">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="7" height="7" x="3" y="3" rx="1" />
@@ -274,13 +455,9 @@
                 <rect width="7" height="7" x="3" y="14" rx="1" />
             </svg>
             <span>Dashboard</span>
-            <!-- underline ativo -->
-            <span class="absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-8 rounded-full"
-                style="background-color: hsl(171 95% 34%);"></span>
-        </a>
 
-        <!-- Movimentações -->
-        <a href="/movimentacoes"
+        </a>
+        <a href="#"
             class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium text-gray-500">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -292,10 +469,11 @@
                 <line x1="3" y1="18" x2="3.01" y2="18" />
             </svg>
             <span>Movimentações</span>
+
         </a>
 
         <!-- Categorias -->
-        <a href="/categorias"
+        <a href="#"
             class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium text-gray-500">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -306,8 +484,9 @@
         </a>
 
         <!-- Histórico -->
-        <a href="/historico"
-            class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium text-gray-500">
+        <a href="#"
+            class="flex flex-1 flex-col items-center justify-center gap-1 pt-3 pb-4 text-[10px] font-medium text-gray-500"
+            style="color: hsl(171 95% 34%);">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10" />
