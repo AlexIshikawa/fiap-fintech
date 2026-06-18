@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@import "tailwindcss";
+
 @theme {
     /* Fonte principal */
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
@@ -10,4 +12,13 @@
     --color-neutral: hsl(0 0% 100%);
     --color-neutral-200: hsl(0 0% 95%);
     --color-neutral-1000: hsl(0 0% 9%);
+}
+
+@layer components {
+    .card {
+        background-color: hsl(0 0% 100%);
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+        padding: 1.25rem;
+    }
 }
